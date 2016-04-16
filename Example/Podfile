@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SubtitleView_Example', :exclusive => true do
+  pod 'SubtitleView', :path => '../'
+end
+
+target 'SubtitleView_Tests', :exclusive => true do
+  pod 'SubtitleView', :path => '../'
+
+  
+end
