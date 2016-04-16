@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol SubtitleViewDelegate {
+public protocol SubtitleViewDelegate {
     
 }
 
-class SubtitleView: UIView {
+public class SubtitleView: UIView {
     
     var delegate: SubtitleViewDelegate?
     
@@ -22,25 +22,34 @@ class SubtitleView: UIView {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        setup()
+    }
+    
+    private func setup() {
+        self.backgroundColor = UIColor.clearColor()
+        setupTextView()
+        self.addSubview(self.textView)
+    }
+    
+    private func setupTextView() {
         self.textView = UITextView(frame: CGRect(x: 0,
             y: frame.height * 0.75,
             width: frame.width,
             height: frame.height * 0.25))
         self.textView.delegate = self
-        self.addSubview(self.textView)
-    }
-    
-    // PRIVATE METHODS
-    private func setupTextView() {
-        
+        self.textView.scrollEnabled = false
+        self.textView.textAlignment = .Center
+        self.textView.font = UIFont(name: "Arial-Bold", size: 26.0)
+        self.textView.backgroundColor = UIColor.cyanColor()
     }
     
     private func setupPlaceholderLabel() {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        setup()
     }
 }
 
