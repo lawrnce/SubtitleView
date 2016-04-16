@@ -38,9 +38,9 @@ public class SubtitleView: UIView {
             height: frame.height * 0.25))
         self.textView.delegate = self
         self.textView.scrollEnabled = false
+        self.textView.font = UIFont(name: "Arial-BoldItalicMT", size: 18.0)
         self.textView.textAlignment = .Center
-        self.textView.font = UIFont(name: "Arial-Bold", size: 26.0)
-        self.textView.backgroundColor = UIColor.cyanColor()
+        self.textView.textContainer.maximumNumberOfLines = 2
     }
     
     private func setupPlaceholderLabel() {
@@ -55,4 +55,30 @@ public class SubtitleView: UIView {
 
 extension SubtitleView: UITextViewDelegate {
     
+    public func textViewDidChange(textView: UITextView) {
+        let string = NSAttributedString(string: textView.text, attributes: [
+            NSStrokeColorAttributeName : UIColor.blackColor(),
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSStrokeWidthAttributeName : NSNumber(float: -4.0),
+            NSFontAttributeName : UIFont(name: "Arial-BoldItalicMT", size: 20.0)!
+            ])
+        self.textView.attributedText =  string
+        self.textView.textAlignment = .Center
+    }
+    
+    private func sizeOfString (string: String, constrainedToWidth width: Double, font: UIFont) -> CGSize {
+        return (string as NSString).boundingRectWithSize(CGSize(width: width, height: DBL_MAX),
+            options: NSStringDrawingOptions.UsesLineFragmentOrigin,
+            attributes: [NSFontAttributeName: font],
+            context: nil).size
+    }
+    
+    public func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        let newText = (textView.text as NSString).stringByReplacingCharactersInRange(range, withString: text)
+        var textWidth = CGRectGetWidth(UIEdgeInsetsInsetRect(textView.frame, textView.textContainerInset))
+        textWidth -= 2.0 * textView.textContainer.lineFragmentPadding;
+        let boundingRect = sizeOfString(newText, constrainedToWidth: Double(textWidth), font: textView.font!)
+        let numberOfLines = boundingRect.height / textView.font!.lineHeight;
+        return numberOfLines <= 2;
+    }
 }
