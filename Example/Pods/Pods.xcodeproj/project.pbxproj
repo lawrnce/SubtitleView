@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A357FE2BEED4EA1212E8FB8696CF0BC /* SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA054D4CF205C1D5F78AD4D307414D43 /* SubtitleView.swift */; };
+		2DE468685D21B4D5719C852E2FD8127C /* SubtitleView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E7C44FD52AFD24A131165337E8D092 /* SubtitleView-dummy.m */; };
+		331A0F20C14AF2041818C94ACED211A6 /* SubtitleView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DAF1572FCA059A3E2137CF78336DB85 /* SubtitleView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48F925615B24B2F2A92EC9745C8CB2C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5E46A9C3A69D412C89BBC8A5CC041312 /* Pods-SubtitleView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6A4CDD770AB05DEEDC2B33001791B48 /* Pods-SubtitleView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FFD801E6105ABA7D8D493AB42404D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		817ED7BA545F3320301C283C269E4018 /* SubtitleView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 844E62610759C9B26F191951D96F32C1 /* SubtitleView.bundle */; };
+		BCFEB5585286F4A9D61FFEAE340E5765 /* Pods-SubtitleView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C08E2D51A6CF8C62E4F083B651E717E0 /* Pods-SubtitleView_Example-dummy.m */; };
+		CD3EC9442AE1A611F5750E2979F548F4 /* Pods-SubtitleView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F69A3C41DD2B26A150250D096D3305F /* Pods-SubtitleView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D17D5D1B8C427320F4A01066BB4244F6 /* Pods-SubtitleView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93AC35C4C26676C778479A503B9E2C /* Pods-SubtitleView_Tests-dummy.m */; };
+		ED768F707BB97D0724D41137C990C011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437860D0843594C29C318388179EF806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE67C3BB2026A621CABA4516798735;
+			remoteInfo = SubtitleView;
+		};
+		779FE3A45ABF42408FFF77CA58BA7233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C25CA5300D75C6152D5D85EB6EACB92;
+			remoteInfo = "SubtitleView-SubtitleView";
+		};
+		8C2913FD9C260091FB9B107ADB6CA373 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42EE67C3BB2026A621CABA4516798735;
+			remoteInfo = SubtitleView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		046FE47FCF292335452A222991BE6F98 /* Pods-SubtitleView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SubtitleView_Tests.modulemap"; sourceTree = "<group>"; };
+		10186015ADF59A7F0A6B7B96EA6BDEDA /* Pods-SubtitleView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SubtitleView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		109A1012C7D78C2AC090FBEA0EEB8ABB /* Pods_SubtitleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubtitleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15170F832474BB15EEF207FC74331DA3 /* Pods-SubtitleView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SubtitleView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2290F2EE89624F2FB9B5500A38BB95CD /* Pods-SubtitleView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SubtitleView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3F69A3C41DD2B26A150250D096D3305F /* Pods-SubtitleView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SubtitleView_Example-umbrella.h"; sourceTree = "<group>"; };
+		449ACA15BF165E7405AC84394CCF1B68 /* Pods-SubtitleView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SubtitleView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		44A32F13E3E2805017B1E6DC55C4FB98 /* Pods-SubtitleView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SubtitleView_Example-resources.sh"; sourceTree = "<group>"; };
+		544E7EF1BEA4D2E28CC095ECED3684FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE0EDB559965BF3A83ACD1DBBA5962D /* Pods-SubtitleView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SubtitleView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		63D9A359AD014E8E469C9BFE782016E6 /* SubtitleView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SubtitleView-prefix.pch"; sourceTree = "<group>"; };
+		6A02FFC1E3D27EC5781B666CE08A3B3C /* SubtitleView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SubtitleView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D8CCD21F9901920D56E609A4DCAEBA /* SubtitleView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SubtitleView.modulemap; sourceTree = "<group>"; };
+		7DAF1572FCA059A3E2137CF78336DB85 /* SubtitleView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SubtitleView-umbrella.h"; sourceTree = "<group>"; };
+		844E62610759C9B26F191951D96F32C1 /* SubtitleView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubtitleView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SubtitleView.xcconfig; sourceTree = "<group>"; };
+		8B6660956BC8A797A35D68574E9DA3AC /* Pods-SubtitleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SubtitleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		961AC688BDA415921922CD9B5E04BD9F /* Pods-SubtitleView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SubtitleView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9B086955254E9BE22502D6F75C9CCAEE /* Pods-SubtitleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SubtitleView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D3835CDA1EFF9A5409748F4EE356313 /* Pods_SubtitleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubtitleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FCF662DF86070FDD60616CB6077728 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7FE5605241FAD62D51013E3EA77252E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A4CDD770AB05DEEDC2B33001791B48 /* Pods-SubtitleView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SubtitleView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE3A385D361ECD7CE17A70A0D632A200 /* Pods-SubtitleView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SubtitleView_Example.modulemap"; sourceTree = "<group>"; };
+		C08E2D51A6CF8C62E4F083B651E717E0 /* Pods-SubtitleView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SubtitleView_Example-dummy.m"; sourceTree = "<group>"; };
+		C56E3DC6D2D36D10B43171C2FF15CC0F /* Pods-SubtitleView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SubtitleView_Tests-resources.sh"; sourceTree = "<group>"; };
+		CF93AC35C4C26676C778479A503B9E2C /* Pods-SubtitleView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SubtitleView_Tests-dummy.m"; sourceTree = "<group>"; };
+		D4E7C44FD52AFD24A131165337E8D092 /* SubtitleView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SubtitleView-dummy.m"; sourceTree = "<group>"; };
+		E47CE12FD4389476F997DF142EB590DD /* Pods-SubtitleView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SubtitleView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0DD25FBB0963E6A00F20E41A1030970 /* Pods-SubtitleView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SubtitleView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA054D4CF205C1D5F78AD4D307414D43 /* SubtitleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SubtitleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C8144089B4613D8DA15CE7D8886301B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFD801E6105ABA7D8D493AB42404D90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9BCAF4554B1160699A053A0513E1360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED768F707BB97D0724D41137C990C011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFF0D41522111ADA986E717E993C0B03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F925615B24B2F2A92EC9745C8CB2C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCD97502A3FC3356B2305DE59AF8CE39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3019BDBC4C56EEB4C103A00D355CD5A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93CE7DD7B8DFB0F1A7334C3CCD4A453 /* Pods-SubtitleView_Example */,
+				56E9194C26CF48D8286DDD999EBD74DA /* Pods-SubtitleView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		35A855B8ADD3E0582BB24B2EF64CE782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				109A1012C7D78C2AC090FBEA0EEB8ABB /* Pods_SubtitleView_Example.framework */,
+				9D3835CDA1EFF9A5409748F4EE356313 /* Pods_SubtitleView_Tests.framework */,
+				844E62610759C9B26F191951D96F32C1 /* SubtitleView.bundle */,
+				6A02FFC1E3D27EC5781B666CE08A3B3C /* SubtitleView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56E9194C26CF48D8286DDD999EBD74DA /* Pods-SubtitleView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				544E7EF1BEA4D2E28CC095ECED3684FA /* Info.plist */,
+				046FE47FCF292335452A222991BE6F98 /* Pods-SubtitleView_Tests.modulemap */,
+				10186015ADF59A7F0A6B7B96EA6BDEDA /* Pods-SubtitleView_Tests-acknowledgements.markdown */,
+				15170F832474BB15EEF207FC74331DA3 /* Pods-SubtitleView_Tests-acknowledgements.plist */,
+				CF93AC35C4C26676C778479A503B9E2C /* Pods-SubtitleView_Tests-dummy.m */,
+				2290F2EE89624F2FB9B5500A38BB95CD /* Pods-SubtitleView_Tests-frameworks.sh */,
+				C56E3DC6D2D36D10B43171C2FF15CC0F /* Pods-SubtitleView_Tests-resources.sh */,
+				B6A4CDD770AB05DEEDC2B33001791B48 /* Pods-SubtitleView_Tests-umbrella.h */,
+				8B6660956BC8A797A35D68574E9DA3AC /* Pods-SubtitleView_Tests.debug.xcconfig */,
+				5CE0EDB559965BF3A83ACD1DBBA5962D /* Pods-SubtitleView_Tests.release.xcconfig */,
+			);
+			name = "Pods-SubtitleView_Tests";
+			path = "Target Support Files/Pods-SubtitleView_Tests";
+			sourceTree = "<group>";
+		};
+		6EB819705F605723862A51348F1271CE /* SubtitleView */ = {
+			isa = PBXGroup;
+			children = (
+				E58232E2AF47FAA1168E693D7C1939F1 /* Classes */,
+			);
+			path = SubtitleView;
+			sourceTree = "<group>";
+		};
+		719C0ED06D2C5493548A9E49632075B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FE5605241FAD62D51013E3EA77252E /* Info.plist */,
+				78D8CCD21F9901920D56E609A4DCAEBA /* SubtitleView.modulemap */,
+				8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */,
+				D4E7C44FD52AFD24A131165337E8D092 /* SubtitleView-dummy.m */,
+				63D9A359AD014E8E469C9BFE782016E6 /* SubtitleView-prefix.pch */,
+				7DAF1572FCA059A3E2137CF78336DB85 /* SubtitleView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SubtitleView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				CD389CA343249C6DA95B038AD42102ED /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				35A855B8ADD3E0582BB24B2EF64CE782 /* Products */,
+				3019BDBC4C56EEB4C103A00D355CD5A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B15405A6F0DBC73E179D177D29E68B80 /* SubtitleView */ = {
+			isa = PBXGroup;
+			children = (
+				6EB819705F605723862A51348F1271CE /* SubtitleView */,
+				719C0ED06D2C5493548A9E49632075B0 /* Support Files */,
+			);
+			name = SubtitleView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C93CE7DD7B8DFB0F1A7334C3CCD4A453 /* Pods-SubtitleView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				A1FCF662DF86070FDD60616CB6077728 /* Info.plist */,
+				BE3A385D361ECD7CE17A70A0D632A200 /* Pods-SubtitleView_Example.modulemap */,
+				E47CE12FD4389476F997DF142EB590DD /* Pods-SubtitleView_Example-acknowledgements.markdown */,
+				F0DD25FBB0963E6A00F20E41A1030970 /* Pods-SubtitleView_Example-acknowledgements.plist */,
+				C08E2D51A6CF8C62E4F083B651E717E0 /* Pods-SubtitleView_Example-dummy.m */,
+				449ACA15BF165E7405AC84394CCF1B68 /* Pods-SubtitleView_Example-frameworks.sh */,
+				44A32F13E3E2805017B1E6DC55C4FB98 /* Pods-SubtitleView_Example-resources.sh */,
+				3F69A3C41DD2B26A150250D096D3305F /* Pods-SubtitleView_Example-umbrella.h */,
+				961AC688BDA415921922CD9B5E04BD9F /* Pods-SubtitleView_Example.debug.xcconfig */,
+				9B086955254E9BE22502D6F75C9CCAEE /* Pods-SubtitleView_Example.release.xcconfig */,
+			);
+			name = "Pods-SubtitleView_Example";
+			path = "Target Support Files/Pods-SubtitleView_Example";
+			sourceTree = "<group>";
+		};
+		CD389CA343249C6DA95B038AD42102ED /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B15405A6F0DBC73E179D177D29E68B80 /* SubtitleView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E58232E2AF47FAA1168E693D7C1939F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA054D4CF205C1D5F78AD4D307414D43 /* SubtitleView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1AF19F1B5445A07939348F0A5B854128 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331A0F20C14AF2041818C94ACED211A6 /* SubtitleView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A3F27C48A2A2429C432DF1AEE892462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E46A9C3A69D412C89BBC8A5CC041312 /* Pods-SubtitleView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F5BDB47E7EA1FA3C47CA45450C49EE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3EC9442AE1A611F5750E2979F548F4 /* Pods-SubtitleView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42EE67C3BB2026A621CABA4516798735 /* SubtitleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 626FD62FF42D87900EC79BBF1759B1D0 /* Build configuration list for PBXNativeTarget "SubtitleView" */;
+			buildPhases = (
+				FD1C957047A705C0B5F37065D3F906F9 /* Sources */,
+				DFF0D41522111ADA986E717E993C0B03 /* Frameworks */,
+				C65741C6D8FCAE1C98DB2DC33D7509DA /* Resources */,
+				1AF19F1B5445A07939348F0A5B854128 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				511B9D33A410BC8B4A19DB37E83D82BC /* PBXTargetDependency */,
+			);
+			name = SubtitleView;
+			productName = SubtitleView;
+			productReference = 6A02FFC1E3D27EC5781B666CE08A3B3C /* SubtitleView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C25CA5300D75C6152D5D85EB6EACB92 /* SubtitleView-SubtitleView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000115FECEBB54B35489A88843E15225 /* Build configuration list for PBXNativeTarget "SubtitleView-SubtitleView" */;
+			buildPhases = (
+				06B3FB2D1BA49397D8538BC3930147A5 /* Sources */,
+				FCD97502A3FC3356B2305DE59AF8CE39 /* Frameworks */,
+				DAE02A9616366878E6C8EE7A33C8B413 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SubtitleView-SubtitleView";
+			productName = "SubtitleView-SubtitleView";
+			productReference = 844E62610759C9B26F191951D96F32C1 /* SubtitleView.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		9E9F83351F3BEDC591B4C91AF94CB536 /* Pods-SubtitleView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8EA7FD6B54C334FE77E6A3985227358 /* Build configuration list for PBXNativeTarget "Pods-SubtitleView_Tests" */;
+			buildPhases = (
+				511005C150B734D1BF59C102B6DC4F88 /* Sources */,
+				6C8144089B4613D8DA15CE7D8886301B /* Frameworks */,
+				3A3F27C48A2A2429C432DF1AEE892462 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90BD83C12B2D62B851001DA01F10E1EE /* PBXTargetDependency */,
+			);
+			name = "Pods-SubtitleView_Tests";
+			productName = "Pods-SubtitleView_Tests";
+			productReference = 9D3835CDA1EFF9A5409748F4EE356313 /* Pods_SubtitleView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C03CD78A14F17150AA2848115C578C97 /* Pods-SubtitleView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E609751374134377B8CF84555B624A0 /* Build configuration list for PBXNativeTarget "Pods-SubtitleView_Example" */;
+			buildPhases = (
+				6DFCE54D4A3322DE5ADBF441B2E1E647 /* Sources */,
+				A9BCAF4554B1160699A053A0513E1360 /* Frameworks */,
+				4F5BDB47E7EA1FA3C47CA45450C49EE6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B74BC63F19DC29EA717B4F7B3DA75017 /* PBXTargetDependency */,
+			);
+			name = "Pods-SubtitleView_Example";
+			productName = "Pods-SubtitleView_Example";
+			productReference = 109A1012C7D78C2AC090FBEA0EEB8ABB /* Pods_SubtitleView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 35A855B8ADD3E0582BB24B2EF64CE782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C03CD78A14F17150AA2848115C578C97 /* Pods-SubtitleView_Example */,
+				9E9F83351F3BEDC591B4C91AF94CB536 /* Pods-SubtitleView_Tests */,
+				42EE67C3BB2026A621CABA4516798735 /* SubtitleView */,
+				6C25CA5300D75C6152D5D85EB6EACB92 /* SubtitleView-SubtitleView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C65741C6D8FCAE1C98DB2DC33D7509DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				817ED7BA545F3320301C283C269E4018 /* SubtitleView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE02A9616366878E6C8EE7A33C8B413 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06B3FB2D1BA49397D8538BC3930147A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		511005C150B734D1BF59C102B6DC4F88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17D5D1B8C427320F4A01066BB4244F6 /* Pods-SubtitleView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFCE54D4A3322DE5ADBF441B2E1E647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFEB5585286F4A9D61FFEAE340E5765 /* Pods-SubtitleView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1C957047A705C0B5F37065D3F906F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE468685D21B4D5719C852E2FD8127C /* SubtitleView-dummy.m in Sources */,
+				2A357FE2BEED4EA1212E8FB8696CF0BC /* SubtitleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		511B9D33A410BC8B4A19DB37E83D82BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SubtitleView-SubtitleView";
+			target = 6C25CA5300D75C6152D5D85EB6EACB92 /* SubtitleView-SubtitleView */;
+			targetProxy = 779FE3A45ABF42408FFF77CA58BA7233 /* PBXContainerItemProxy */;
+		};
+		90BD83C12B2D62B851001DA01F10E1EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SubtitleView;
+			target = 42EE67C3BB2026A621CABA4516798735 /* SubtitleView */;
+			targetProxy = 8C2913FD9C260091FB9B107ADB6CA373 /* PBXContainerItemProxy */;
+		};
+		B74BC63F19DC29EA717B4F7B3DA75017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SubtitleView;
+			target = 42EE67C3BB2026A621CABA4516798735 /* SubtitleView */;
+			targetProxy = 437860D0843594C29C318388179EF806 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		57EDA12D07473B08D2A85B7219D6E19D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B086955254E9BE22502D6F75C9CCAEE /* Pods-SubtitleView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SubtitleView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SubtitleView_Example/Pods-SubtitleView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SubtitleView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6F422DB823F27C3BA047C55AB6917F8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE0EDB559965BF3A83ACD1DBBA5962D /* Pods-SubtitleView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SubtitleView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SubtitleView_Tests/Pods-SubtitleView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SubtitleView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8D3590B3E32729C70E28DC69ABB209F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SubtitleView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		A390DCA3378FDBF1C5759BD2B096D7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961AC688BDA415921922CD9B5E04BD9F /* Pods-SubtitleView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SubtitleView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SubtitleView_Example/Pods-SubtitleView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SubtitleView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7EA7EA77468E3BA30EFCB71F820B4CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6660956BC8A797A35D68574E9DA3AC /* Pods-SubtitleView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SubtitleView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SubtitleView_Tests/Pods-SubtitleView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SubtitleView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED6B5167DE24A3BBE242C61F4715C283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SubtitleView/SubtitleView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SubtitleView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SubtitleView/SubtitleView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SubtitleView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE5ACAA8C6FF42AE01BFD80CAF458D36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = SubtitleView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F9DA788ED5ED485C7B39071EADB683E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8867D643AB667F336E933FE85885DCD9 /* SubtitleView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SubtitleView/SubtitleView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SubtitleView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SubtitleView/SubtitleView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SubtitleView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000115FECEBB54B35489A88843E15225 /* Build configuration list for PBXNativeTarget "SubtitleView-SubtitleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5ACAA8C6FF42AE01BFD80CAF458D36 /* Debug */,
+				8D3590B3E32729C70E28DC69ABB209F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		626FD62FF42D87900EC79BBF1759B1D0 /* Build configuration list for PBXNativeTarget "SubtitleView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED6B5167DE24A3BBE242C61F4715C283 /* Debug */,
+				F9DA788ED5ED485C7B39071EADB683E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E609751374134377B8CF84555B624A0 /* Build configuration list for PBXNativeTarget "Pods-SubtitleView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A390DCA3378FDBF1C5759BD2B096D7EC /* Debug */,
+				57EDA12D07473B08D2A85B7219D6E19D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8EA7FD6B54C334FE77E6A3985227358 /* Build configuration list for PBXNativeTarget "Pods-SubtitleView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EA7EA77468E3BA30EFCB71F820B4CB /* Debug */,
+				6F422DB823F27C3BA047C55AB6917F8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

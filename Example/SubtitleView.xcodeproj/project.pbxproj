@@ -15,6 +15,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		E634FEDC1CC1E7B2006DDDC3 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = E634FEDB1CC1E7B2006DDDC3 /* test.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		91A593E2DA5C8C4AE09E510D /* Pods-SubtitleView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubtitleView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SubtitleView_Example/Pods-SubtitleView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9BF1727B8158D93525D84D3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A2EF027E71FDB13F4103DC5E /* Pods_SubtitleView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubtitleView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E634FEDB1CC1E7B2006DDDC3 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test.gif; path = ../test.gif; sourceTree = "<group>"; };
 		EACA246C1ED57E1987334736 /* Pods-SubtitleView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubtitleView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SubtitleView_Tests/Pods-SubtitleView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA66D0F82B14C85B19699511 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FFC5972ACEE930A51BEFF3B4 /* Pods_SubtitleView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubtitleView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				E634FEDB1CC1E7B2006DDDC3 /* test.gif */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E634FEDC1CC1E7B2006DDDC3 /* test.gif in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,

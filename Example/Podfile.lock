@@ -1,0 +1,14 @@
+PODS:
+  - SubtitleView (0.1.0)
+
+DEPENDENCIES:
+  - SubtitleView (from `../`)
+
+EXTERNAL SOURCES:
+  SubtitleView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SubtitleView: 351cd6a037c2bc8fde8f3d6f6c1fa570da45ab43
+
+COCOAPODS: 0.39.0

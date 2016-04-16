@@ -1,0 +1,6 @@
+framework module SubtitleView {
+  umbrella header "SubtitleView-umbrella.h"
+
+  export *
+  module * { export * }
+}
