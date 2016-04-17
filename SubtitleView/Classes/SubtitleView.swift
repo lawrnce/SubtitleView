@@ -19,6 +19,8 @@ public class SubtitleView: UIView {
     var textView: UITextView!
     
     private var placeholderLabel: UILabel!
+    private var initialFontSize: CGFloat!
+    private var fontSize: CGFloat!
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,11 +38,15 @@ public class SubtitleView: UIView {
             y: frame.height * 0.75,
             width: frame.width,
             height: frame.height * 0.25))
+        self.initialFontSize = dynamicFontSize()
+        self.fontSize = self.initialFontSize
         self.textView.delegate = self
         self.textView.scrollEnabled = false
-        self.textView.font = UIFont(name: "Arial-BoldItalicMT", size: 18.0)
+        self.textView.font = UIFont(name: "Arial-BoldItalicMT", size: self.initialFontSize)
         self.textView.textAlignment = .Center
         self.textView.textContainer.maximumNumberOfLines = 2
+        self.textView.backgroundColor = UIColor.clearColor()
+        self.textView.textContainerInset = UIEdgeInsetsZero
     }
     
     private func setupPlaceholderLabel() {
@@ -51,6 +57,13 @@ public class SubtitleView: UIView {
         super.init(coder: aDecoder)
         setup()
     }
+    
+    private func dynamicFontSize() -> CGFloat {
+        let normalizer = CGFloat(240.0 / 20.0)
+//        let fontScale = CGFloat(20.0)
+        let scaleFactor = self.frame.width / normalizer
+        return scaleFactor
+    }
 }
 
 extension SubtitleView: UITextViewDelegate {
@@ -59,11 +72,13 @@ extension SubtitleView: UITextViewDelegate {
         let string = NSAttributedString(string: textView.text, attributes: [
             NSStrokeColorAttributeName : UIColor.blackColor(),
             NSForegroundColorAttributeName : UIColor.whiteColor(),
-            NSStrokeWidthAttributeName : NSNumber(float: -4.0),
-            NSFontAttributeName : UIFont(name: "Arial-BoldItalicMT", size: 20.0)!
+            NSStrokeWidthAttributeName : NSNumber(float: -2.0),
+            NSFontAttributeName : UIFont(name: "Arial-BoldItalicMT", size: self.fontSize)!
             ])
         self.textView.attributedText =  string
         self.textView.textAlignment = .Center
+        
+        print(string.size().height)
     }
     
     private func sizeOfString (string: String, constrainedToWidth width: Double, font: UIFont) -> CGSize {
@@ -82,3 +97,7 @@ extension SubtitleView: UITextViewDelegate {
         return numberOfLines <= 2;
     }
 }
+
+
+
+
