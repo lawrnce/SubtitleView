@@ -7,20 +7,39 @@
 //
 
 import UIKit
+import SubtitleView
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    var imageView: UIImageView!
+    var subtitleView: SubtitleView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+//        let frame = CGRect(x: 0.0, y: 0.0, width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.width)
+         let frame = CGRect(x: 37.5, y: 80, width: 300, height: 300)
+        self.imageView = UIImageView(frame: frame)
+        self.imageView.image = UIImage(named: "test.gif")
+        self.subtitleView = SubtitleView(frame: frame)
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.view.addSubview(self.imageView)
+        self.view.addSubview(self.subtitleView)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+    @IBAction func donePressed(sender: AnyObject) {
+    
+    }
 }
 

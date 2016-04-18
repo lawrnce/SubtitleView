@@ -17,47 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-uQ-J7b">
-                                <rect key="frame" x="67" y="80" width="240" height="240"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-OG-M1L">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="CDZ-hl-jRW"/>
-                                    <constraint firstAttribute="width" constant="240" id="GRH-ud-CVN"/>
+                                    <constraint firstAttribute="height" constant="44" id="sbh-Ct-yNN"/>
                                 </constraints>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FF9-MC-5Mc" customClass="SubtitleView" customModule="SubtitleView">
-                                <rect key="frame" x="67" y="80" width="240" height="240"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="i4D-nL-xwm"/>
-                                    <constraint firstAttribute="height" constant="240" id="txn-5A-thd"/>
-                                </constraints>
-                            </view>
+                                <items>
+                                    <barButtonItem title="Done" id="3H8-DN-iaY">
+                                        <connections>
+                                            <action selector="donePressed:" destination="vXZ-lx-hvc" id="OHW-Pw-PTw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Mte-uQ-J7b" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="CNA-Wp-psa"/>
-                            <constraint firstItem="FF9-MC-5Mc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="MTf-9f-VXG"/>
-                            <constraint firstItem="Mte-uQ-J7b" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="RdL-fw-VJG"/>
-                            <constraint firstItem="FF9-MC-5Mc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VrP-X7-GLq"/>
-                            <constraint firstItem="Mte-uQ-J7b" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="WGc-3Q-e9Z"/>
+                            <constraint firstAttribute="trailing" secondItem="bbP-OG-M1L" secondAttribute="trailing" id="0FZ-VF-a8N"/>
+                            <constraint firstItem="bbP-OG-M1L" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="82q-cp-iJp"/>
+                            <constraint firstItem="bbP-OG-M1L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="AT4-ST-8L4"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="RdL-fw-VJG"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="imageView" destination="Mte-uQ-J7b" id="rLJ-Dn-xIx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.5" y="388.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="test.gif" width="280" height="280"/>
-    </resources>
 </document>

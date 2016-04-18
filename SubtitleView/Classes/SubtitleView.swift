@@ -27,6 +27,11 @@ public class SubtitleView: UIView {
         setup()
     }
     
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setup()
+    }
+    
     private func setup() {
         self.backgroundColor = UIColor.clearColor()
         setupTextView()
@@ -53,11 +58,6 @@ public class SubtitleView: UIView {
         
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
     private func dynamicFontSize() -> CGFloat {
         let scaleFactor = CGFloat(240.0 / 22.0)
         return self.frame.width / scaleFactor
@@ -68,6 +68,10 @@ public class SubtitleView: UIView {
             options: NSStringDrawingOptions.UsesLineFragmentOrigin,
             attributes: [NSFontAttributeName: font],
             context: nil).size
+    }
+    
+    private func renderFrame() {
+        
     }
 }
 
