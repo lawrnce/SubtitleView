@@ -16,8 +16,7 @@ public class SubtitleView: UIView {
     
     var delegate: SubtitleViewDelegate?
     
-    var textView: UITextView!
-    
+    private var textView: UITextView!
     private var placeholderLabel: UILabel!
     private var initialFontSize: CGFloat!
     private var fontSize: CGFloat!
@@ -32,18 +31,22 @@ public class SubtitleView: UIView {
         setup()
     }
     
+    public override func resignFirstResponder() -> Bool {
+        return self.textView.resignFirstResponder()
+    }
+    
     private func setup() {
         self.backgroundColor = UIColor.clearColor()
+        self.initialFontSize = dynamicFontSize()
         setupTextView()
-        self.addSubview(self.textView)
+        setupPlaceholderLabel()
     }
     
     private func setupTextView() {
         self.textView = UITextView(frame: CGRect(x: 0,
-            y: frame.height * 0.85,
+            y: frame.height * 0.9,
             width: frame.width,
-            height: frame.height * 0.25))
-        self.initialFontSize = dynamicFontSize()
+            height: frame.height * 0.1))
         self.fontSize = self.initialFontSize
         self.textView.delegate = self
         self.textView.scrollEnabled = false
@@ -52,14 +55,28 @@ public class SubtitleView: UIView {
         self.textView.textContainer.maximumNumberOfLines = 2
         self.textView.backgroundColor = UIColor.clearColor()
         self.textView.textContainerInset = UIEdgeInsetsZero
+        self.addSubview(self.textView)
     }
     
     private func setupPlaceholderLabel() {
-        
+        self.placeholderLabel = UILabel(frame: CGRectZero)
+        let string = NSAttributedString(string: "Add Subtitle", attributes: [
+            NSForegroundColorAttributeName : UIColor.whiteColor(),
+            NSUnderlineStyleAttributeName: NSUnderlineStyle.StyleSingle.rawValue,
+            NSFontAttributeName : UIFont(name: "Arial-ItalicMT", size: self.initialFontSize - 4.0)!
+            ])
+        self.placeholderLabel.attributedText = string
+        self.placeholderLabel.sizeToFit()
+        self.placeholderLabel.center = CGPointMake(self.textView.center.x, self.textView.center.y)
+        self.addSubview(self.placeholderLabel)
+    }
+    
+    private func dynamicHeightSize() {
+    
     }
     
     private func dynamicFontSize() -> CGFloat {
-        let scaleFactor = CGFloat(240.0 / 22.0)
+        let scaleFactor = CGFloat(240.0 / 19.0)
         return self.frame.width / scaleFactor
     }
     
@@ -77,8 +94,16 @@ public class SubtitleView: UIView {
 
 extension SubtitleView: UITextViewDelegate {
     
+    public func textViewDidBeginEditing(textView: UITextView) {
+        self.placeholderLabel.hidden = true
+    }
+    
+    public func textViewDidEndEditing(textView: UITextView) {
+        self.placeholderLabel.hidden = !textView.text.isEmpty
+    }
+    
     public func textViewDidChange(textView: UITextView) {
-        if (textView.text != "") {
+        if (textView.text.isEmpty == false) {
             let string = NSAttributedString(string: textView.text, attributes: [
                 NSStrokeColorAttributeName : UIColor.blackColor(),
                 NSForegroundColorAttributeName : UIColor.whiteColor(),
@@ -99,9 +124,9 @@ extension SubtitleView: UITextViewDelegate {
         
         if (numberOfLines <= 2) {
             if (numberOfLines == 1) {
-                textView.frame = CGRect(x: 0, y: frame.height * 0.85, width: frame.width, height: frame.height * 0.15)
+                textView.frame = CGRect(x: 0, y: frame.height * 0.9, width: frame.width, height: frame.height * 0.1)
             } else if (numberOfLines == 2){
-                textView.frame = CGRect(x: 0, y: frame.height * 0.75, width: frame.width, height: frame.height * 0.25)
+                textView.frame = CGRect(x: 0, y: frame.height * 0.8, width: frame.width, height: frame.height * 0.2)
             }
             return true
         } else {
@@ -109,7 +134,3 @@ extension SubtitleView: UITextViewDelegate {
         }
     }
 }
-
-
-
-

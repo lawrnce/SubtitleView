@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func donePressed(sender: AnyObject) {
-    
+        self.subtitleView.resignFirstResponder()
     }
 }
 
