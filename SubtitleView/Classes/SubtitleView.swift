@@ -44,9 +44,9 @@ public class SubtitleView: UIView {
     
     private func setupTextView() {
         self.textView = UITextView(frame: CGRect(x: 0,
-            y: frame.height * 0.9,
+            y: frame.height * 0.89,
             width: frame.width,
-            height: frame.height * 0.1))
+            height: frame.height * 0.11))
         self.fontSize = self.initialFontSize
         self.textView.delegate = self
         self.textView.scrollEnabled = false
@@ -124,7 +124,7 @@ extension SubtitleView: UITextViewDelegate {
         
         if (numberOfLines <= 2) {
             if (numberOfLines == 1) {
-                textView.frame = CGRect(x: 0, y: frame.height * 0.9, width: frame.width, height: frame.height * 0.1)
+                textView.frame = CGRect(x: 0, y: frame.height * 0.89, width: frame.width, height: frame.height * 0.11)
             } else if (numberOfLines == 2){
                 textView.frame = CGRect(x: 0, y: frame.height * 0.8, width: frame.width, height: frame.height * 0.2)
             }
